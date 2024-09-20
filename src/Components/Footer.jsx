@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+import logo2 from '../../public/shayan_2.png';
 
 const Footer = () => {
   return (
@@ -7,11 +9,7 @@ const Footer = () => {
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {/* About Us Section */}
           <div>
-            <h1 className="text-2xl font-semibold mb-4">About Us</h1>
-            <p className="text-sm text-white">
-              We are dedicated to providing healthcare and education for all,
-              empowering communities to build a sustainable and healthy future.
-            </p>
+            <Image className="" src={logo2} alt="" />
           </div>
 
           {/* Quick Links Section */}
@@ -47,7 +45,7 @@ const Footer = () => {
             <p className="text-sm text-white">
               Gurugram, Haryana - 122503, India
             </p>
-            <p className="text-sm text-white">Email: info@admedusociety.org</p>
+            <p className="text-sm text-white">Email: samratuap52@gmail.com</p>
             <p className="text-sm text-white">Phone: +91-9958586721</p>
           </div>
 
@@ -75,8 +73,7 @@ const Footer = () => {
 
         <div className="border-t border-white mt-10">
           <p className="text-center text-sm py-4">
-            © 2024 All Rights Reserved : Renu Sharma Healthcare & Education
-            Foundation
+            © 2024 All Rights Reserved : Shayan Mart
           </p>
         </div>
       </div>

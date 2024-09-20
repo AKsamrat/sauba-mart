@@ -5,6 +5,8 @@ import { IoMdHeartEmpty } from 'react-icons/io';
 import { MdOutlineShoppingCart } from 'react-icons/md';
 import { CiSearch } from 'react-icons/ci';
 import Link from 'next/link';
+import logo from '../../public/shayan3.png';
+import Image from 'next/image';
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -30,8 +32,9 @@ const Navbar = () => {
     <div className=" mx-auto border-b-2 border-gray-100 ">
       <nav className=" px-8 py-4 flex justify-between items-center w-full ">
         <h6>
-          <p className="font-bold text-3xl">SHAYAN MART</p>
+          {/* <p className="font-bold text-3xl">SHAYAN MART</p> */}
           {/* <span className="text-xl text-orange-500 font-semibold">Next</span> Hero */}
+          <Image className="w-44" src={logo} alt="" />
         </h6>
         <div className=" flex justify-between items-center gap-3 ">
           {links?.map(link => (
