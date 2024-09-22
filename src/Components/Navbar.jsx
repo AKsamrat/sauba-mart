@@ -17,15 +17,15 @@ const Navbar = () => {
     },
     {
       title: 'Contact',
-      path: '#contact',
+      path: '/Contact',
     },
     {
-      title: 'About Me',
-      path: '#about',
+      title: 'About',
+      path: '/About',
     },
     {
-      title: 'Signup',
-      path: '#skill',
+      title: 'Sign Up',
+      path: '/Signup',
     },
   ];
   return (

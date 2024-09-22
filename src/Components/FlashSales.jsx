@@ -91,12 +91,12 @@ const FlashSales = () => {
     },
   ];
   return (
-    <div>
-      <div className="flex justify-start items-center gap-2 mb-5">
+    <div className="mt-10">
+      <div className="flex justify-start items-center gap-2 mb-2">
         <Image src={cImg} alt="rectangle"></Image>
         <p className=" font-semibold text-[16px] text-[#DB4444] ">Today</p>
       </div>
-      <div className="flex justify-between items-center mb-14">
+      <div className="flex justify-between items-center mb-7">
         <p className="text-3xl font-bold">Flash Sales</p>
         <div className="text-red-500">
           <Timer time={'October, 31, 2024'} />

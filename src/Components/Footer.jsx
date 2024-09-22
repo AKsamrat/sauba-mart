@@ -5,7 +5,7 @@ import logo2 from '../../public/shayan_2.png';
 const Footer = () => {
   return (
     <div>
-      <div className="bg-black text-white py-10 px-5 w-full">
+      <div className="bg-black text-white py-10 px-5 w-full ">
         <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           {/* About Us Section */}
           <div>
@@ -42,11 +42,9 @@ const Footer = () => {
           {/* Contact Section */}
           <div>
             <h1 className="text-2xl font-semibold mb-4">Contact Us</h1>
-            <p className="text-sm text-white">
-              Gurugram, Haryana - 122503, India
-            </p>
+            <p className="text-sm text-white">DHaka, Bangladesh-1230</p>
             <p className="text-sm text-white">Email: samratuap52@gmail.com</p>
-            <p className="text-sm text-white">Phone: +91-9958586721</p>
+            <p className="text-sm text-white">Phone: +88-01683654865</p>
           </div>
 
           {/* Newsletter Section */}
