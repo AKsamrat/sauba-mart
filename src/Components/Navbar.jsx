@@ -29,7 +29,7 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className=" mx-auto border-b-2 border-gray-100 ">
+    <div className=" mx-auto border-b-2 border-gray-100 max-w-7xl ">
       <nav className=" px-8 py-4 flex justify-between items-center w-full ">
         <h6>
           {/* <p className="font-bold text-3xl">SHAYAN MART</p> */}

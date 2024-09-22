@@ -42,7 +42,7 @@ const BestSelling = () => {
           </div>
           <p className="font-medium pt-4 py-2">The north Coat</p>
           <p className="text-[#DB4444]">
-            $260 <span className="text-gray-600">$360</span>
+            $260 <span className="text-gray-600 line-through ">$360</span>
           </p>
           <div className="flex justify-start items-center gap-2">
             <Rating
@@ -67,7 +67,7 @@ const BestSelling = () => {
           </div>
           <p className="font-medium pt-4 py-2">Gucci duffle bag</p>
           <p className="text-[#DB4444]">
-            $960 <span className="text-gray-600">$1160</span>
+            $960 <span className="text-gray-600 line-through ">$1160</span>
           </p>
           <div className="flex justify-start items-center gap-2">
             <Rating
@@ -92,7 +92,7 @@ const BestSelling = () => {
           </div>
           <p className="font-medium pt-4 py-2">RGB liquid CPU Cooler</p>
           <p className="text-[#DB4444]">
-            $160 <span className="text-gray-600">$170</span>
+            $160 <span className="text-gray-600 line-through ">$170</span>
           </p>
           <div className="flex justify-start items-center gap-2">
             <Rating
@@ -117,7 +117,7 @@ const BestSelling = () => {
           </div>
           <p className="font-medium pt-4 py-2">Small BookSelf</p>
           <p className="text-[#DB4444]">
-            $360 <span className="text-gray-600">$390</span>
+            $360 <span className="text-gray-600 line-through ">$390</span>
           </p>
           <div className="flex justify-start items-center gap-2">
             <Rating
