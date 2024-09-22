@@ -1,5 +1,6 @@
 import Banner from '@/Components/Banner';
 import BestSelling from '@/Components/BestSelling';
+import FlashSales from '@/Components/FlashSales';
 import NewArival from '@/Components/NewArival';
 import OurProduct from '@/Components/OurProduct';
 import ProductMarketing from '@/Components/ProductMarketing';
@@ -10,6 +11,7 @@ const page = () => {
   return (
     <div>
       <Banner />
+      <FlashSales></FlashSales>
       <SubCategory></SubCategory>
       <BestSelling></BestSelling>
       <ProductMarketing></ProductMarketing>

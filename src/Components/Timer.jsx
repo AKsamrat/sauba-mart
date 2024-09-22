@@ -2,13 +2,13 @@
 import React, { useEffect, useState } from 'react';
 // import { Text } from './styles';
 
-const Timer = () => {
+const Timer = ({ time }) => {
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(0);
 
-  const deadline = 'December, 31, 2024';
+  const deadline = time;
 
   const getTime = () => {
     const time = Date.parse(deadline) - Date.now();

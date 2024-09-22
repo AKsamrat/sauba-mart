@@ -17,7 +17,7 @@ const ProductMarketing = () => {
           <h1 className="text-3xl font-semibold text-white lg:text-5xl">
             Enhance Your <br /> Music Experience
           </h1>
-          <Timer />
+          <Timer time={'December, 31, 2024'} />
           <br />
           <button className="px-5 py-3 bg-[#DB4444] rounded-sm text-white mt-1">
             Buy Now
