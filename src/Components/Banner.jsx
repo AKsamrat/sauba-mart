@@ -31,10 +31,10 @@ const Banner = () => {
   ];
 
   return (
-    <div className="grid grid-cols-5">
+    <div className="grid grid-cols-1 lg:grid-cols-5">
       <div className="col-span-1">
-        <div className="border-r-2 border-gray-200 pt-8 pl-7">
-          <ul className="flex flex-col justify-start space-y-4">
+        <div className="lg:border-r-2 border-gray-200 pt-8 lg:pl-7">
+          <ul className="hidden lg:flex lg:flex-col justify-start space-y-4">
             {categories.map(category => (
               <li key={category.id}>
                 <a
@@ -64,8 +64,8 @@ const Banner = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className=" flex justify-center items-center bg-black px-2 mx-auto ml-11 mt-10 h-96">
-              <div className="text-start pl-16 items-start mt-32 w-full h-full ">
+            <div className=" flex flex-col lg:flex-row justify-between lg:justify-center items-center bg-black px-2 mx-auto mt-3 lg:mt-10 lg:h-96 gap-12 lg:gap-2">
+              <div className="text-start pl-16 items-start mt-8 lg:mt-32 w-full h-full ">
                 <div className="flex justify-start items-center gap-4 text-white pb-6">
                   <ImAppleinc className="text-4xl" />
                   <p>iPhone 16 series</p>
@@ -88,8 +88,8 @@ const Banner = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className=" flex justify-center items-center bg-black px-2 mx-auto ml-11 mt-10 h-96">
-              <div className="text-start pl-16 items-start mt-32 w-full h-full ">
+            <div className=" flex flex-col lg:flex-row justify-center items-center bg-black px-2 mx-auto ml-11 mt-3 lg:mt-10 lg:h-96 gap-12 lg:gap-2">
+              <div className="text-start pl-16 items-start mt-8 lg:mt-32 w-full h-full ">
                 <div className="flex justify-start items-center gap-4 text-white pb-6">
                   <ImAppleinc className="text-4xl" />
                   <p>iPhone 16 series</p>

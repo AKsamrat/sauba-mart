@@ -61,14 +61,18 @@ const Navbar = () => {
           ))}
         </div>
         <div className="flex justify-between items-center gap-3">
-          <div className="bg-slate-100 flex justify-between items-center gap-4 px-3 py-2 rounded-lg">
+          <div className="bg-slate-100 lg:flex justify-between items-center gap-4 px-3 py-2 rounded-lg hidden">
             <p className="text-[14px] text-gray-400">
               What are you looking for ?
             </p>
             <CiSearch />
           </div>
-          <IoMdHeartEmpty />
-          <MdOutlineShoppingCart />
+          <Link href="/Wishlist">
+            <IoMdHeartEmpty />
+          </Link>
+          <Link href="/Cart">
+            <MdOutlineShoppingCart />
+          </Link>
         </div>
       </nav>
     </div>

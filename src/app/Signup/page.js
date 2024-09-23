@@ -61,7 +61,7 @@ const page = () => {
   };
 
   return (
-    <div>
+    <div className="my-10">
       <div className=" min-h-screen bg-base-200">
         <div className="flex flex-col lg:flex-row justify-center gap-7">
           <div className="text-center lg:text-left">
@@ -70,12 +70,12 @@ const page = () => {
             </h1>
             <Image className="h-[75vh]" src={regImg} alt="" />
           </div>
-          <div className=" shrink-0 w-full max-w-sm shadow-2xl bg-base-100 p-4">
-            <form className="" onSubmit={handleSubmit(onSubmit)}>
+          <div className=" shrink-0 w-full max-w-sm shadow-2xl bg-base-100 p-6">
+            <form className="space-y-3" onSubmit={handleSubmit(onSubmit)}>
               <p className="font-semibold text-2xl mb-4">
                 Enter Your Details Below
               </p>
-              <div className="form-control">
+              <div className="mt-4">
                 <label className="">
                   <span className="">Name</span>
                 </label>

@@ -10,9 +10,9 @@ const NewArival = () => {
         <p className=" font-semibold text-[16px] text-[#DB4444] ">This Month</p>
       </div>
       <div className="flex justify-between items-center mb-14">
-        <p className="text-3xl font-bold">Best Seeling Product</p>
+        <p className="text-3xl font-bold">New Arival</p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-4 grid-rows-2 gap-8 h-[600px] ">
+      <div className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-2 gap-8 h-[600px] ">
         {/* first image grid============ */}
         <div
           className="lg:col-span-2 bg-black text-white relative bg-cover lg:row-span-2 row-span-1 col-span-1 row-start-1 hover:translate-x-2 hover:scale-105 duration-500 overflow-clip "
@@ -36,7 +36,7 @@ const NewArival = () => {
         </div>
         {/* 2nd grid================================= */}
         <div
-          className="col-span-2 bg-black text-white relative bg-cover bg-no-repeat row-start-1 row-end-2 hover:translate-x-2 hover:scale-105 duration-500 overflow-clip"
+          className="lg:col-span-2 bg-black text-white relative bg-cover bg-no-repeat row-start-1 row-end-2 hover:translate-x-2 hover:scale-105 duration-500 overflow-clip"
           style={{
             backgroundImage: `url('wo.png')`,
             // opacity: 10,

@@ -29,7 +29,7 @@ const SubCategory = () => {
         <p className=" font-semibold text-[16px] text-[#DB4444] ">Category</p>
       </div>
       <p className="text-3xl font-bold">Browse By Category</p>
-      <div className="grid grid-cols-6 gap-5 my-16 mx-auto">
+      <div className="grid grid-cols-2 lg:grid-cols-6 gap-5 my-16 mx-auto">
         {categories.map(category => (
           <div
             key={category.id}

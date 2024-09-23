@@ -28,7 +28,7 @@ const Timer = ({ time }) => {
 
   return (
     <div
-      className="mt-6 p-2 text-center w-[400px] grid grid-cols-4"
+      className="mt-6 p-2 text-center lg:w-[400px] grid grid-cols-4"
       role="timer"
     >
       <div className="col-span-1">
@@ -52,7 +52,7 @@ const Timer = ({ time }) => {
           <p id="minute" className="text-lg  font-bold">
             {minutes < 10 ? '0' + minutes : minutes}
           </p>
-          <span className="text-[14px] font-medium">Minutes</span>
+          <span className="text-[14px] font-medium">Min</span>
         </div>
       </div>
       <div className="col-span-1">
@@ -60,7 +60,7 @@ const Timer = ({ time }) => {
           <p id="second" className="text-lg  font-bold">
             {seconds < 10 ? '0' + seconds : seconds}
           </p>
-          <span className="text-[14px] font-medium">Seconds</span>
+          <span className="text-[14px] font-medium">Sec</span>
         </div>
       </div>
     </div>

@@ -27,7 +27,7 @@ const BestSelling = () => {
         </button>
       </div>
       {/* cart ===================== */}
-      <div className="grid grid-cols-4 gap-7">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-7">
         <div className="">
           <div className="bg-gray-100 rounded-md flex justify-center items-center p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
             <Image src={img} alt="product"></Image>

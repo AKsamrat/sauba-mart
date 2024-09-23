@@ -4,7 +4,7 @@ import { PiHeadsetBold } from 'react-icons/pi';
 import { SiAdguard } from 'react-icons/si';
 const Services = () => {
   return (
-    <div className="grid grid-cols-3 gap-9 mb-10">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-9 mb-10">
       {/* 1st service=================== */}
       <div className="flex flex-col justify-center items-center">
         <div className="size-20 rounded-full flex justify-center items-center bg-gray-400 p-2 mb-5">

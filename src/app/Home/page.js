@@ -2,6 +2,7 @@ import Banner from '@/Components/Banner';
 import BestSelling from '@/Components/BestSelling';
 import FlashSales from '@/Components/FlashSales';
 import NewArival from '@/Components/NewArival';
+import OurPartner from '@/Components/OurPartner';
 import OurProduct from '@/Components/OurProduct';
 import ProductMarketing from '@/Components/ProductMarketing';
 import Services from '@/Components/Services';
@@ -19,6 +20,7 @@ const page = () => {
       <OurProduct></OurProduct>
       <NewArival></NewArival>
       <Services></Services>
+      <OurPartner></OurPartner>
     </div>
   );
 };

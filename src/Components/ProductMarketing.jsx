@@ -8,8 +8,8 @@ import Timer from './Timer';
 const ProductMarketing = () => {
   return (
     <div>
-      <div className=" flex justify-center items-center bg-black px-2 pb-4 mx-auto mt-10 my-16 h-[420px]">
-        <div className="text-start pl-16 items-start mt-32 w-full h-full ">
+      <div className=" flex flex-col lg:flex-row justify-center items-center bg-black px-2 pb-4 mx-auto mt-10 my-16 lg:h-[420px]">
+        <div className="text-start pl-4 lg:pl-16 items-start mt-32 w-full h-full ">
           <div className="flex justify-start items-center gap-4 text-white pb-6">
             {/* <ImAppleinc className="text-4xl" /> */}
             <p className="text-[#DB4444]">Category</p>
