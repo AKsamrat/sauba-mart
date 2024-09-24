@@ -22,14 +22,14 @@ const BestSelling = () => {
       </div>
       <div className="flex justify-between items-center mb-14">
         <p className="text-3xl font-bold">Best Seeling Product</p>
-        <button className="px-10 py-3 bg-[#DB4444] rounded-lg text-white">
+        <button className="px-4 lg:px-10 py-3 bg-[#DB4444] rounded-lg text-white">
           View All
         </button>
       </div>
       {/* cart ===================== */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-7">
         <div className="">
-          <div className="bg-gray-100 rounded-md flex justify-center items-center p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
+          <div className="bg-gray-100 rounded-md flex justify-center items-center p-3 lg:p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
             <Image src={img} alt="product"></Image>
             <div className="absolute top-3 right-3">
               <button className="bg-white size-8 rounded-full flex justify-center items-center">
@@ -54,7 +54,7 @@ const BestSelling = () => {
           </div>
         </div>
         <div className="">
-          <div className="bg-gray-100 rounded-md flex justify-center items-center p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
+          <div className="bg-gray-100 rounded-md flex justify-center items-center p-3 lg:p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
             <Image src={img1} alt="product"></Image>
             <div className="absolute top-3 right-3">
               <button className="bg-white size-8 rounded-full flex justify-center items-center">
@@ -79,7 +79,7 @@ const BestSelling = () => {
           </div>
         </div>
         <div className="">
-          <div className="bg-gray-100 rounded-md flex justify-center items-center p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
+          <div className="bg-gray-100 rounded-md flex justify-center items-center p-3 lg:p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
             <Image src={img3} alt="product"></Image>
             <div className="absolute top-3 right-3">
               <button className="bg-white size-8 rounded-full flex justify-center items-center">
@@ -104,7 +104,7 @@ const BestSelling = () => {
           </div>
         </div>
         <div className="">
-          <div className="bg-gray-100 rounded-md flex justify-center items-center p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
+          <div className="bg-gray-100 rounded-md flex justify-center items-center p-3 lg:p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
             <Image src={img4} alt="product"></Image>
             <div className="absolute top-3 right-3">
               <button className="bg-white size-8 rounded-full flex justify-center items-center">

@@ -96,7 +96,7 @@ const OurProduct = () => {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-8">
         {products.map(product => (
           <div key={product?.id}>
-            <div className="bg-gray-100 rounded-md flex justify-center items-center p-8 relative h-[240px] hover:translate-x-2 hover:scale-110 duration-500">
+            <div className="bg-gray-100 rounded-md flex justify-center items-center p-3 lg:p-8 relative h-[240px] hover:translate-x-2 hover:scale-110 duration-500">
               <Image
                 className="overflow-hidden h-[230px]"
                 src={product?.pic}

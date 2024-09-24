@@ -96,8 +96,8 @@ const FlashSales = () => {
         <Image src={cImg} alt="rectangle"></Image>
         <p className=" font-semibold text-[16px] text-[#DB4444] ">Today</p>
       </div>
-      <div className="flex flex-col lg:flex-row justify-between items-center mb-7">
-        <p className="text-3xl font-bold">Flash Sales</p>
+      <div className="flex  justify-between items-center mb-7">
+        <p className="text-2xl lg:text-3xl font-bold">Flash Sales</p>
         <div className="text-red-500">
           <Timer time={'October, 31, 2024'} />
         </div>
@@ -105,9 +105,9 @@ const FlashSales = () => {
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-8">
         {products.map(product => (
           <div key={product?.id}>
-            <div className="bg-gray-100 rounded-md flex justify-center items-center p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
+            <div className="bg-gray-100 rounded-md flex justify-center items-center p-3 lg:p-8 relative h-[240px] hover:translate-x-2 hover:scale-105 duration-500">
               <Image
-                className="overflow-hidden h-[230px]"
+                className="object-cover h-[230px]"
                 src={product?.pic}
                 alt="product"
               ></Image>
