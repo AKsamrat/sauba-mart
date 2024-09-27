@@ -10,7 +10,7 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import toast from 'react-hot-toast';
 import Link from 'next/link';
 import Image from 'next/image';
-
+import { FcGoogle } from 'react-icons/fc';
 // const auth = getAuth(app);
 
 const page = () => {
@@ -76,6 +76,7 @@ const page = () => {
               <p className="font-semibold text-sm mb-6">
                 Enter Your Details Below
               </p>
+
               <div className="form-control ">
                 <label className="">
                   <span className="">Email</span>
@@ -124,7 +125,32 @@ const page = () => {
                   value="Log In"
                 ></input>
               </div>
+              <button
+                // onClick={() => handleSocialLogin(googleLogin)}
+                aria-label="Login with Google"
+                type="button"
+                className="flex items-center justify-center w-full  space-x-2 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-600 focus:dark:ring-violet-600 text-green-800"
+              >
+                <p className="flex justify-center items-center gap-3 p-2 text-xl font-bold">
+                  {' '}
+                  <span className="text-4xl">
+                    <FcGoogle />
+                  </span>
+                  Login with Google
+                </p>
+              </button>
             </form>
+            <p className="text-xs text-center sm:px-6 dark:text-gray-600 py-3">
+              Don't have an account?
+              <Link
+                to={'/Signup'}
+                rel="noopener noreferrer"
+                href="/Signup"
+                className="underline dark:text-gray-800 text-[#00C2CB] font-bold"
+              >
+                Sign up
+              </Link>
+            </p>
           </div>
         </div>
       </div>

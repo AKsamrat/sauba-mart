@@ -27,8 +27,10 @@ const page = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = data => {
+  const onSubmit = async data => {
     const { email, password } = data;
+    console.log(data);
+
     if (password.length < 6) {
       setRegisterError('Password Should be minium 6 Charecter');
       return;
@@ -40,7 +42,17 @@ const page = () => {
       return;
     }
     setRegisterError('');
-
+    const res = await fetch('http://localhost:3000/Signup/api', {
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers: {
+        'content-type': 'application/json',
+      },
+    });
+    console.log(res);
+    if (res.status === 200) {
+      reset();
+    }
     // createUser(email, password)
     //   .then(result => {
     //     updateProfile(auth.currentUser, {
@@ -57,7 +69,6 @@ const page = () => {
     //     toast('Email and Pass Problem');
     //     console.log(data);
     //   });
-    reset();
   };
 
   return (

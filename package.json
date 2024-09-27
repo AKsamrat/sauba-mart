@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "@smastrom/react-rating": "^1.5.0",
+    "bcrypt": "^5.1.1",
+    "mongodb": "^6.9.0",
     "next": "14.2.12",
+    "next-auth": "^4.24.7",
     "react": "^18",
     "react-dom": "^18",
     "react-fast-marquee": "^1.6.5",

@@ -3,6 +3,7 @@ import './globals.css';
 import Navbar from '@/Components/Navbar';
 import Footer from '@/Components/Footer';
 import toast, { Toaster } from 'react-hot-toast';
+import AuthProvider from '@/Components/AuthProvider';
 const geistSans = localFont({
   src: './fonts/GeistVF.woff',
   variable: '--font-geist-sans',
@@ -25,10 +26,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
-        <Navbar></Navbar>
-        <div className="max-w-7xl mx-auto pl-3 lg:pl-0">{children}</div>
-        <Toaster />
-        <Footer></Footer>
+        <AuthProvider>
+          <Navbar></Navbar>
+          <div className="max-w-7xl mx-auto pl-3 lg:pl-0">{children}</div>
+          <Toaster />
+          <Footer></Footer>
+        </AuthProvider>
       </body>
     </html>
   );
