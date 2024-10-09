@@ -1,34 +1,29 @@
 'use client';
-import { useContext, useState } from 'react';
-// import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import regImg from '../../../public/reg.jpg';
 import { useForm } from 'react-hook-form';
-// import { AuthContext } from '../Provider/AuthProvider';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-// import { getAuth, updateProfile } from 'firebase/auth';
-// import app from '../Firebase/Firebase.config';
 import toast from 'react-hot-toast';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FcGoogle } from 'react-icons/fc';
-// const auth = getAuth(app);
+import { signIn } from 'next-auth/react';
+import { useSearchParams } from 'next/navigation';
 
-const page = () => {
-  // const { createUser } = useContext(AuthContext);
+const Page = () => {
   const [showPassword, setPassword] = useState(false);
   const [registerError, setRegisterError] = useState('');
-
-  // const navigate = useNavigate();
-  // const location = useLocation();
-  // const from = location?.state ? location.state : '/';
+  const searchParams = useSearchParams();
+  const path = searchParams.get('redirect');
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = data => {
+  const onSubmit = async data => {
     const { email, password } = data;
+    console.log(data);
     if (password.length < 6) {
       setRegisterError('Password Should be minium 6 Charecter');
       return;
@@ -40,24 +35,13 @@ const page = () => {
       return;
     }
     setRegisterError('');
-
-    // createUser(email, password)
-    //   .then(result => {
-    //     updateProfile(auth.currentUser, {
-    //       displayName: data.name,
-    //       photoURL: data.photo,
-    //     }).then(result => {
-    //       toast('successfully register');
-    //       navigate(from, { replace: true });
-    //       // if (result.user) {
-    //       // }
-    //     });
-    //   })
-    //   .catch(error => {
-    //     toast('Email and Pass Problem');
-    //     console.log(data);
-    //   });
-    reset();
+    const res = await signIn('credentials', {
+      email,
+      password,
+      redirect: false,
+      callbackUrl: path ? path : '/',
+    });
+    console.log(res);
   };
 
   return (
@@ -125,23 +109,23 @@ const page = () => {
                   value="Log In"
                 ></input>
               </div>
-              <button
-                // onClick={() => handleSocialLogin(googleLogin)}
-                aria-label="Login with Google"
-                type="button"
-                className="flex items-center justify-center w-full  space-x-2 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-600 focus:dark:ring-violet-600 text-green-800"
-              >
-                <p className="flex justify-center items-center gap-3 p-2 text-xl font-bold">
-                  {' '}
-                  <span className="text-4xl">
-                    <FcGoogle />
-                  </span>
-                  Login with Google
-                </p>
-              </button>
             </form>
+            <button
+              // onClick={() => handleSocialLogin(googleLogin)}
+              aria-label="Login with Google"
+              type="button"
+              className="flex items-center justify-center w-full  space-x-2 border rounded-md focus:ring-2 focus:ring-offset-1 dark:border-gray-600 focus:dark:ring-violet-600 text-green-800"
+            >
+              <p className="flex justify-center items-center gap-3 p-2 text-xl font-bold mt-8">
+                {' '}
+                <span className="text-4xl">
+                  <FcGoogle />
+                </span>
+                Login with Google
+              </p>
+            </button>
             <p className="text-xs text-center sm:px-6 dark:text-gray-600 py-3">
-              Don't have an account?
+              Dont have an account?
               <Link
                 to={'/Signup'}
                 rel="noopener noreferrer"
@@ -158,4 +142,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

@@ -1,19 +1,15 @@
 'use client';
-import { useContext, useState } from 'react';
-// import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 import regImg from '../../../public/reg.jpg';
 import { useForm } from 'react-hook-form';
-// import { AuthContext } from '../Provider/AuthProvider';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-// import { getAuth, updateProfile } from 'firebase/auth';
-// import app from '../Firebase/Firebase.config';
 import toast from 'react-hot-toast';
 import Link from 'next/link';
 import Image from 'next/image';
 
 // const auth = getAuth(app);
 
-const page = () => {
+const Page = () => {
   // const { createUser } = useContext(AuthContext);
   const [showPassword, setPassword] = useState(false);
   const [registerError, setRegisterError] = useState('');
@@ -46,7 +42,7 @@ const page = () => {
       method: 'POST',
       body: JSON.stringify(data),
       headers: {
-        'content-type': 'application/json',
+        'Content-Type': 'application/json',
       },
     });
     console.log(res);
@@ -178,4 +174,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

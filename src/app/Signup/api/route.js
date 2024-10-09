@@ -10,19 +10,16 @@ export const POST = async req => {
     const existingUser = await userCollection.findOne({ email: newUser.email });
     console.log(existingUser);
     if (existingUser) {
-      return NextResponse.json(
-        { message: 'User already exists' },
-        { status: 409 }
-      );
+      return Response.json({ message: 'User already exists' }, { status: 409 });
     }
     const hashedPass = bcrypt.hashSync(newUser.password, 14);
     const res = await userCollection.insertOne({
       ...newUser,
       password: hashedPass,
     });
-    return NextResponse.json({ message: 'user Created' }, { status: 200 });
+    return Response.json({ message: 'user Created' }, { status: 200 });
   } catch (error) {
-    return NextResponse.json(
+    return Response.json(
       { message: 'something wrong', error },
       { status: 500 }
     );
